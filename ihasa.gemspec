@@ -39,6 +39,9 @@ Gem::Specification.new do |s|
 
   s.summary = 'Redis-backed rate limiter (token bucket) written in Ruby and Lua'
 
-  s.add_runtime_dependency('redis', '~> 3')
-  s.add_development_dependency('rspec', '~> 3.4')
+  s.add_runtime_dependency 'redis', '> 3'
+
+  s.add_development_dependency 'byebug'
+  s.add_development_dependency 'rspec', '~> 3.9.0'
+  s.add_development_dependency 'rubocop', '~> 0.79.0'
 end
